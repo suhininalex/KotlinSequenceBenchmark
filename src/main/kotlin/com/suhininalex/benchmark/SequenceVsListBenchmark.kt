@@ -114,54 +114,54 @@ open class SequenceVsListBenchmark {
     @Benchmark
     fun chainDecreasing_1_sequence(bh: Blackhole) {
         data.asSequence()
-                .filter { it % 10 < 5 }
+                .filter { it % 10 > 4 }
                 .forEach { bh.consume(it) }
     }
 
     @Benchmark
     fun chainDecreasing_1_list(bh: Blackhole) {
         data
-                .filter { it % 10 < 5 }
+                .filter { it % 10 > 4 }
                 .forEach { bh.consume(it) }
     }
 
     @Benchmark
     fun chainDecreasing_3_sequence(bh: Blackhole) {
         data.asSequence()
-                .filter { it % 10 < 5 }
-                .filter { it % 10 < 7 }
-                .filter { it % 10 < 8 }
+                .filter { it % 10 > 4 }
+                .filter { it % 10 > 7 }
+                .filter { it % 10 > 8 }
                 .forEach { bh.consume(it) }
     }
 
     @Benchmark
     fun chainDecreasing_3_list(bh: Blackhole) {
         data
-                .filter { it % 10 < 5 }
-                .filter { it % 10 < 7 }
-                .filter { it % 10 < 8 }
+                .filter { it % 10 > 4 }
+                .filter { it % 10 > 7 }
+                .filter { it % 10 > 8 }
                 .forEach { bh.consume(it) }
     }
 
     @Benchmark
     fun chainDecreasing_5_sequence(bh: Blackhole) {
         data.asSequence()
-                .filter { it % 10 < 5 }
-                .filter { it % 10 < 7 }
-                .filter { it % 10 < 8 }
-                .filter { it % 10 < 9 }
-                .filter { it % 10 <= 9 }
+                .filter { it % 10 > 2 }
+                .filter { it % 10 > 4 }
+                .filter { it % 10 > 6 }
+                .filter { it % 10 > 7 }
+                .filter { it % 10 > 8 }
                 .forEach { bh.consume(it) }
     }
 
     @Benchmark
     fun chainDecreasing_5_list(bh: Blackhole) {
         data
-                .filter { it % 10 < 5 }
-                .filter { it % 10 < 7 }
-                .filter { it % 10 < 8 }
-                .filter { it % 10 < 9 }
-                .filter { it % 10 <= 9 }
+                .filter { it % 10 > 2 }
+                .filter { it % 10 > 4 }
+                .filter { it % 10 > 6 }
+                .filter { it % 10 > 7 }
+                .filter { it % 10 > 8 }
                 .forEach { bh.consume(it) }
     }
 }

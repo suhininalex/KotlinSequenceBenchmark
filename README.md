@@ -1,6 +1,6 @@
 ## Description
 
-Simple benchmark of kotlin sequences (vs kotlin list)
+A simple benchmark of kotlin sequences (vs kotlin lists)
 
 ## Quick Start
 
@@ -9,3 +9,5 @@ Simple benchmark of kotlin sequences (vs kotlin list)
 ``` java -jar /target/benchmarks.jar ```
 
 ## Results
+
+See ``` results/benchmark.txt ```

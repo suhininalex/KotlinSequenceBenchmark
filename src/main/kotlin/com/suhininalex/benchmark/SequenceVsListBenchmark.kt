@@ -7,8 +7,8 @@ import java.util.concurrent.TimeUnit
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
 @State(Scope.Benchmark)
 @Fork(1)
-@Warmup(iterations = 10)
-@Measurement(iterations = 10)
+@Warmup(iterations = 7)
+@Measurement(iterations = 15)
 open class SequenceVsListBenchmark {
 
     @Param("1000000")

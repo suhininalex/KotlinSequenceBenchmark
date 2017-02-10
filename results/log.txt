@@ -1,0 +1,607 @@
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chainDecreasing_1_list
+# Parameters: (listSize = 1000000)
+
+# Run progress: 0,00% complete, ETA 00:05:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 12890,474 us/op
+# Warmup Iteration   2: 11393,929 us/op
+# Warmup Iteration   3: 11557,677 us/op
+# Warmup Iteration   4: 11138,706 us/op
+# Warmup Iteration   5: 11312,615 us/op
+# Warmup Iteration   6: 11128,874 us/op
+# Warmup Iteration   7: 10972,067 us/op
+Iteration   1: 11047,295 us/op
+Iteration   2: 11027,464 us/op
+Iteration   3: 11186,109 us/op
+Iteration   4: 10964,950 us/op
+Iteration   5: 11303,959 us/op
+Iteration   6: 11199,124 us/op
+Iteration   7: 11033,081 us/op
+Iteration   8: 11694,807 us/op
+Iteration   9: 11446,122 us/op
+Iteration  10: 11241,358 us/op
+Iteration  11: 11486,453 us/op
+Iteration  12: 11244,410 us/op
+Iteration  13: 11302,226 us/op
+Iteration  14: 11411,056 us/op
+Iteration  15: 11196,657 us/op
+
+
+Result: 11252,338 ±(99.9%) 212,330 us/op [Average]
+  Statistics: (min, avg, max) = (10964,950, 11252,338, 11694,807), stdev = 198,614
+  Confidence interval (99.9%): [11040,008, 11464,668]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chainDecreasing_1_sequence
+# Parameters: (listSize = 1000000)
+
+# Run progress: 7,14% complete, ETA 00:04:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 6507,285 us/op
+# Warmup Iteration   2: 6191,273 us/op
+# Warmup Iteration   3: 6191,726 us/op
+# Warmup Iteration   4: 6181,038 us/op
+# Warmup Iteration   5: 6210,114 us/op
+# Warmup Iteration   6: 6151,653 us/op
+# Warmup Iteration   7: 6200,847 us/op
+Iteration   1: 6162,543 us/op
+Iteration   2: 6187,578 us/op
+Iteration   3: 6195,956 us/op
+Iteration   4: 6183,910 us/op
+Iteration   5: 6165,504 us/op
+Iteration   6: 6218,334 us/op
+Iteration   7: 6326,789 us/op
+Iteration   8: 6264,674 us/op
+Iteration   9: 6202,120 us/op
+Iteration  10: 6216,570 us/op
+Iteration  11: 6190,951 us/op
+Iteration  12: 6175,785 us/op
+Iteration  13: 6186,525 us/op
+Iteration  14: 6149,266 us/op
+Iteration  15: 6193,125 us/op
+
+
+Result: 6201,309 ±(99.9%) 47,244 us/op [Average]
+  Statistics: (min, avg, max) = (6149,266, 6201,309, 6326,789), stdev = 44,192
+  Confidence interval (99.9%): [6154,065, 6248,553]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chainDecreasing_3_list
+# Parameters: (listSize = 1000000)
+
+# Run progress: 14,29% complete, ETA 00:04:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 30792,172 us/op
+# Warmup Iteration   2: 27104,584 us/op
+# Warmup Iteration   3: 26973,871 us/op
+# Warmup Iteration   4: 27338,169 us/op
+# Warmup Iteration   5: 26100,038 us/op
+# Warmup Iteration   6: 26031,002 us/op
+# Warmup Iteration   7: 26461,467 us/op
+Iteration   1: 26136,253 us/op
+Iteration   2: 25967,145 us/op
+Iteration   3: 26292,685 us/op
+Iteration   4: 26009,137 us/op
+Iteration   5: 26110,022 us/op
+Iteration   6: 26434,095 us/op
+Iteration   7: 26345,493 us/op
+Iteration   8: 26717,122 us/op
+Iteration   9: 26823,473 us/op
+Iteration  10: 26853,877 us/op
+Iteration  11: 26621,162 us/op
+Iteration  12: 26420,231 us/op
+Iteration  13: 26338,652 us/op
+Iteration  14: 26521,910 us/op
+Iteration  15: 26350,089 us/op
+
+
+Result: 26396,090 ±(99.9%) 294,934 us/op [Average]
+  Statistics: (min, avg, max) = (25967,145, 26396,090, 26853,877), stdev = 275,881
+  Confidence interval (99.9%): [26101,156, 26691,024]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chainDecreasing_3_sequence
+# Parameters: (listSize = 1000000)
+
+# Run progress: 21,43% complete, ETA 00:04:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 37651,674 us/op
+# Warmup Iteration   2: 35628,048 us/op
+# Warmup Iteration   3: 34422,679 us/op
+# Warmup Iteration   4: 34610,172 us/op
+# Warmup Iteration   5: 34536,540 us/op
+# Warmup Iteration   6: 34480,232 us/op
+# Warmup Iteration   7: 34671,195 us/op
+Iteration   1: 34615,251 us/op
+Iteration   2: 34748,473 us/op
+Iteration   3: 34722,814 us/op
+Iteration   4: 34532,102 us/op
+Iteration   5: 34539,532 us/op
+Iteration   6: 34486,895 us/op
+Iteration   7: 35138,810 us/op
+Iteration   8: 34607,758 us/op
+Iteration   9: 34483,500 us/op
+Iteration  10: 34871,612 us/op
+Iteration  11: 34503,414 us/op
+Iteration  12: 34770,762 us/op
+Iteration  13: 34563,318 us/op
+Iteration  14: 34451,614 us/op
+Iteration  15: 34518,450 us/op
+
+
+Result: 34636,954 ±(99.9%) 198,808 us/op [Average]
+  Statistics: (min, avg, max) = (34451,614, 34636,954, 35138,810), stdev = 185,965
+  Confidence interval (99.9%): [34438,146, 34835,761]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chainDecreasing_5_list
+# Parameters: (listSize = 1000000)
+
+# Run progress: 28,57% complete, ETA 00:03:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 48363,203 us/op
+# Warmup Iteration   2: 40171,395 us/op
+# Warmup Iteration   3: 38685,053 us/op
+# Warmup Iteration   4: 39174,414 us/op
+# Warmup Iteration   5: 38294,141 us/op
+# Warmup Iteration   6: 38532,898 us/op
+# Warmup Iteration   7: 38273,387 us/op
+Iteration   1: 38396,669 us/op
+Iteration   2: 38478,912 us/op
+Iteration   3: 38253,444 us/op
+Iteration   4: 38228,625 us/op
+Iteration   5: 38544,802 us/op
+Iteration   6: 38686,357 us/op
+Iteration   7: 38573,955 us/op
+Iteration   8: 38434,004 us/op
+Iteration   9: 38486,975 us/op
+Iteration  10: 38823,466 us/op
+Iteration  11: 38638,934 us/op
+Iteration  12: 38782,577 us/op
+Iteration  13: 39010,789 us/op
+Iteration  14: 38507,784 us/op
+Iteration  15: 39179,196 us/op
+
+
+Result: 38601,766 ±(99.9%) 280,383 us/op [Average]
+  Statistics: (min, avg, max) = (38228,625, 38601,766, 39179,196), stdev = 262,270
+  Confidence interval (99.9%): [38321,383, 38882,148]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chainDecreasing_5_sequence
+# Parameters: (listSize = 1000000)
+
+# Run progress: 35,71% complete, ETA 00:03:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 65450,003 us/op
+# Warmup Iteration   2: 64865,585 us/op
+# Warmup Iteration   3: 63883,868 us/op
+# Warmup Iteration   4: 64459,947 us/op
+# Warmup Iteration   5: 64232,541 us/op
+# Warmup Iteration   6: 64693,846 us/op
+# Warmup Iteration   7: 64391,634 us/op
+Iteration   1: 63921,033 us/op
+Iteration   2: 64135,495 us/op
+Iteration   3: 64245,917 us/op
+Iteration   4: 63979,798 us/op
+Iteration   5: 64140,166 us/op
+Iteration   6: 64075,887 us/op
+Iteration   7: 64151,195 us/op
+Iteration   8: 63863,361 us/op
+Iteration   9: 64052,599 us/op
+Iteration  10: 63910,186 us/op
+Iteration  11: 63883,823 us/op
+Iteration  12: 64283,491 us/op
+Iteration  13: 63836,838 us/op
+Iteration  14: 64183,323 us/op
+Iteration  15: 64114,646 us/op
+
+
+Result: 64051,851 ±(99.9%) 153,906 us/op [Average]
+  Statistics: (min, avg, max) = (63836,838, 64051,851, 64283,491), stdev = 143,964
+  Confidence interval (99.9%): [63897,945, 64205,756]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chain_10_list
+# Parameters: (listSize = 1000000)
+
+# Run progress: 42,86% complete, ETA 00:03:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 185840,291 us/op
+# Warmup Iteration   2: 126291,197 us/op
+# Warmup Iteration   3: 120130,640 us/op
+# Warmup Iteration   4: 119330,352 us/op
+# Warmup Iteration   5: 117807,065 us/op
+# Warmup Iteration   6: 119250,914 us/op
+# Warmup Iteration   7: 119172,490 us/op
+Iteration   1: 118063,890 us/op
+Iteration   2: 118402,745 us/op
+Iteration   3: 118077,663 us/op
+Iteration   4: 118623,517 us/op
+Iteration   5: 120689,862 us/op
+Iteration   6: 118430,898 us/op
+Iteration   7: 119113,914 us/op
+Iteration   8: 118786,321 us/op
+Iteration   9: 118545,700 us/op
+Iteration  10: 118591,839 us/op
+Iteration  11: 118503,409 us/op
+Iteration  12: 121761,720 us/op
+Iteration  13: 119593,496 us/op
+Iteration  14: 119122,988 us/op
+Iteration  15: 121025,152 us/op
+
+
+Result: 119155,541 ±(99.9%) 1205,989 us/op [Average]
+  Statistics: (min, avg, max) = (118063,890, 119155,541, 121761,720), stdev = 1128,083
+  Confidence interval (99.9%): [117949,552, 120361,530]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chain_10_sequence
+# Parameters: (listSize = 1000000)
+
+# Run progress: 50,00% complete, ETA 00:02:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 148108,467 us/op
+# Warmup Iteration   2: 138106,703 us/op
+# Warmup Iteration   3: 137703,115 us/op
+# Warmup Iteration   4: 136904,736 us/op
+# Warmup Iteration   5: 136756,717 us/op
+# Warmup Iteration   6: 135791,453 us/op
+# Warmup Iteration   7: 136793,676 us/op
+Iteration   1: 136693,144 us/op
+Iteration   2: 137579,843 us/op
+Iteration   3: 136273,834 us/op
+Iteration   4: 136686,445 us/op
+Iteration   5: 138409,166 us/op
+Iteration   6: 136559,572 us/op
+Iteration   7: 136369,764 us/op
+Iteration   8: 137284,352 us/op
+Iteration   9: 137605,955 us/op
+Iteration  10: 136739,628 us/op
+Iteration  11: 137022,267 us/op
+Iteration  12: 137612,472 us/op
+Iteration  13: 139394,072 us/op
+Iteration  14: 139697,811 us/op
+Iteration  15: 143724,108 us/op
+
+
+Result: 137843,495 ±(99.9%) 2061,841 us/op [Average]
+  Statistics: (min, avg, max) = (136273,834, 137843,495, 143724,108), stdev = 1928,647
+  Confidence interval (99.9%): [135781,655, 139905,336]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chain_1_list
+# Parameters: (listSize = 1000000)
+
+# Run progress: 57,14% complete, ETA 00:02:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 16561,925 us/op
+# Warmup Iteration   2: 15321,176 us/op
+# Warmup Iteration   3: 14670,678 us/op
+# Warmup Iteration   4: 14270,786 us/op
+# Warmup Iteration   5: 14324,594 us/op
+# Warmup Iteration   6: 14512,039 us/op
+# Warmup Iteration   7: 14181,921 us/op
+Iteration   1: 14332,245 us/op
+Iteration   2: 14350,547 us/op
+Iteration   3: 14448,352 us/op
+Iteration   4: 14326,422 us/op
+Iteration   5: 14399,317 us/op
+Iteration   6: 14451,670 us/op
+Iteration   7: 14176,971 us/op
+Iteration   8: 14422,436 us/op
+Iteration   9: 14463,982 us/op
+Iteration  10: 14475,847 us/op
+Iteration  11: 14360,401 us/op
+Iteration  12: 14482,909 us/op
+Iteration  13: 14336,255 us/op
+Iteration  14: 14355,031 us/op
+Iteration  15: 14371,447 us/op
+
+
+Result: 14383,589 ±(99.9%) 85,168 us/op [Average]
+  Statistics: (min, avg, max) = (14176,971, 14383,589, 14482,909), stdev = 79,666
+  Confidence interval (99.9%): [14298,421, 14468,756]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chain_1_sequence
+# Parameters: (listSize = 1000000)
+
+# Run progress: 64,29% complete, ETA 00:01:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 3726,512 us/op
+# Warmup Iteration   2: 3559,199 us/op
+# Warmup Iteration   3: 3536,154 us/op
+# Warmup Iteration   4: 3511,781 us/op
+# Warmup Iteration   5: 3550,439 us/op
+# Warmup Iteration   6: 3515,244 us/op
+# Warmup Iteration   7: 3612,502 us/op
+Iteration   1: 3577,132 us/op
+Iteration   2: 3589,561 us/op
+Iteration   3: 3691,248 us/op
+Iteration   4: 3579,526 us/op
+Iteration   5: 3599,396 us/op
+Iteration   6: 3523,914 us/op
+Iteration   7: 3498,774 us/op
+Iteration   8: 3530,468 us/op
+Iteration   9: 3571,390 us/op
+Iteration  10: 3521,262 us/op
+Iteration  11: 3545,969 us/op
+Iteration  12: 3525,534 us/op
+Iteration  13: 3529,083 us/op
+Iteration  14: 3525,784 us/op
+Iteration  15: 3516,108 us/op
+
+
+Result: 3555,010 ±(99.9%) 51,859 us/op [Average]
+  Statistics: (min, avg, max) = (3498,774, 3555,010, 3691,248), stdev = 48,509
+  Confidence interval (99.9%): [3503,150, 3606,869]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chain_3_list
+# Parameters: (listSize = 1000000)
+
+# Run progress: 71,43% complete, ETA 00:01:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 48333,828 us/op
+# Warmup Iteration   2: 41807,318 us/op
+# Warmup Iteration   3: 40773,867 us/op
+# Warmup Iteration   4: 40042,058 us/op
+# Warmup Iteration   5: 39891,384 us/op
+# Warmup Iteration   6: 39968,865 us/op
+# Warmup Iteration   7: 40230,194 us/op
+Iteration   1: 40307,966 us/op
+Iteration   2: 40154,260 us/op
+Iteration   3: 43221,347 us/op
+Iteration   4: 40919,684 us/op
+Iteration   5: 41779,017 us/op
+Iteration   6: 41054,315 us/op
+Iteration   7: 41094,258 us/op
+Iteration   8: 48311,276 us/op
+Iteration   9: 43731,817 us/op
+Iteration  10: 41003,784 us/op
+Iteration  11: 41377,301 us/op
+Iteration  12: 42246,391 us/op
+Iteration  13: 42011,618 us/op
+Iteration  14: 40633,840 us/op
+Iteration  15: 42119,153 us/op
+
+
+Result: 41997,735 ±(99.9%) 2154,192 us/op [Average]
+  Statistics: (min, avg, max) = (40154,260, 41997,735, 48311,276), stdev = 2015,033
+  Confidence interval (99.9%): [39843,543, 44151,927]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chain_3_sequence
+# Parameters: (listSize = 1000000)
+
+# Run progress: 78,57% complete, ETA 00:01:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 32636,084 us/op
+# Warmup Iteration   2: 31590,208 us/op
+# Warmup Iteration   3: 30927,972 us/op
+# Warmup Iteration   4: 31117,729 us/op
+# Warmup Iteration   5: 31205,194 us/op
+# Warmup Iteration   6: 31141,835 us/op
+# Warmup Iteration   7: 30799,883 us/op
+Iteration   1: 31141,625 us/op
+Iteration   2: 30870,258 us/op
+Iteration   3: 30727,863 us/op
+Iteration   4: 31027,855 us/op
+Iteration   5: 30952,675 us/op
+Iteration   6: 31902,936 us/op
+Iteration   7: 30977,090 us/op
+Iteration   8: 31007,670 us/op
+Iteration   9: 30601,398 us/op
+Iteration  10: 30533,775 us/op
+Iteration  11: 30716,450 us/op
+Iteration  12: 30646,230 us/op
+Iteration  13: 30598,990 us/op
+Iteration  14: 30679,440 us/op
+Iteration  15: 30918,691 us/op
+
+
+Result: 30886,863 ±(99.9%) 360,257 us/op [Average]
+  Statistics: (min, avg, max) = (30533,775, 30886,863, 31902,936), stdev = 336,985
+  Confidence interval (99.9%): [30526,606, 31247,120]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chain_5_list
+# Parameters: (listSize = 1000000)
+
+# Run progress: 85,71% complete, ETA 00:00:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 83431,283 us/op
+# Warmup Iteration   2: 66209,327 us/op
+# Warmup Iteration   3: 65727,993 us/op
+# Warmup Iteration   4: 61592,647 us/op
+# Warmup Iteration   5: 59911,729 us/op
+# Warmup Iteration   6: 62972,310 us/op
+# Warmup Iteration   7: 63527,403 us/op
+Iteration   1: 60904,153 us/op
+Iteration   2: 59774,241 us/op
+Iteration   3: 61209,604 us/op
+Iteration   4: 61802,129 us/op
+Iteration   5: 60282,784 us/op
+Iteration   6: 60545,601 us/op
+Iteration   7: 61479,971 us/op
+Iteration   8: 63632,424 us/op
+Iteration   9: 62021,862 us/op
+Iteration  10: 61763,162 us/op
+Iteration  11: 63202,701 us/op
+Iteration  12: 60273,326 us/op
+Iteration  13: 60552,185 us/op
+Iteration  14: 61734,189 us/op
+Iteration  15: 60819,013 us/op
+
+
+Result: 61333,156 ±(99.9%) 1149,779 us/op [Average]
+  Statistics: (min, avg, max) = (59774,241, 61333,156, 63632,424), stdev = 1075,504
+  Confidence interval (99.9%): [60183,377, 62482,935]
+
+
+# JMH 1.5 (released 750 days ago, please consider updating!)
+# VM invoker: C:\Program Files\Java\jre1.8.0_112\bin\java.exe
+# VM options: <none>
+# Warmup: 7 iterations, 1 s each
+# Measurement: 15 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.suhininalex.benchmark.SequenceVsListBenchmark.chain_5_sequence
+# Parameters: (listSize = 1000000)
+
+# Run progress: 92,86% complete, ETA 00:00:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 60349,201 us/op
+# Warmup Iteration   2: 55562,604 us/op
+# Warmup Iteration   3: 56615,140 us/op
+# Warmup Iteration   4: 56298,342 us/op
+# Warmup Iteration   5: 56430,481 us/op
+# Warmup Iteration   6: 57938,293 us/op
+# Warmup Iteration   7: 58033,975 us/op
+Iteration   1: 56498,920 us/op
+Iteration   2: 58381,397 us/op
+Iteration   3: 57573,756 us/op
+Iteration   4: 59032,518 us/op
+Iteration   5: 58244,154 us/op
+Iteration   6: 56947,493 us/op
+Iteration   7: 58069,602 us/op
+Iteration   8: 55947,112 us/op
+Iteration   9: 55584,641 us/op
+Iteration  10: 56474,149 us/op
+Iteration  11: 55534,957 us/op
+Iteration  12: 55524,368 us/op
+Iteration  13: 56054,824 us/op
+Iteration  14: 55423,112 us/op
+Iteration  15: 56123,041 us/op
+
+
+Result: 56760,936 ±(99.9%) 1287,899 us/op [Average]
+  Statistics: (min, avg, max) = (55423,112, 56760,936, 59032,518), stdev = 1204,702
+  Confidence interval (99.9%): [55473,037, 58048,835]
+
+
+# Run complete. Total time: 00:05:21
+
+Benchmark                                           (listSize)  Mode  Cnt       Score      Error  Units
+SequenceVsListBenchmark.chainDecreasing_1_list         1000000  avgt   15   11252,338 ±  212,330  us/op
+SequenceVsListBenchmark.chainDecreasing_1_sequence     1000000  avgt   15    6201,309 ±   47,244  us/op
+SequenceVsListBenchmark.chainDecreasing_3_list         1000000  avgt   15   26396,090 ±  294,934  us/op
+SequenceVsListBenchmark.chainDecreasing_3_sequence     1000000  avgt   15   34636,954 ±  198,808  us/op
+SequenceVsListBenchmark.chainDecreasing_5_list         1000000  avgt   15   38601,766 ±  280,383  us/op
+SequenceVsListBenchmark.chainDecreasing_5_sequence     1000000  avgt   15   64051,851 ±  153,906  us/op
+SequenceVsListBenchmark.chain_10_list                  1000000  avgt   15  119155,541 ± 1205,989  us/op
+SequenceVsListBenchmark.chain_10_sequence              1000000  avgt   15  137843,495 ± 2061,841  us/op
+SequenceVsListBenchmark.chain_1_list                   1000000  avgt   15   14383,589 ±   85,168  us/op
+SequenceVsListBenchmark.chain_1_sequence               1000000  avgt   15    3555,010 ±   51,859  us/op
+SequenceVsListBenchmark.chain_3_list                   1000000  avgt   15   41997,735 ± 2154,192  us/op
+SequenceVsListBenchmark.chain_3_sequence               1000000  avgt   15   30886,863 ±  360,257  us/op
+SequenceVsListBenchmark.chain_5_list                   1000000  avgt   15   61333,156 ± 1149,779  us/op
+SequenceVsListBenchmark.chain_5_sequence               1000000  avgt   15   56760,936 ± 1287,899  us/op
+
+Benchmark result is saved to results/benchmark.txt

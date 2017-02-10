@@ -1,0 +1,15 @@
+Benchmark                                           (listSize)  Mode  Cnt       Score      Error  Units
+SequenceVsListBenchmark.chainDecreasing_1_list         1000000  avgt   15   11252,338 ±  212,330  us/op
+SequenceVsListBenchmark.chainDecreasing_1_sequence     1000000  avgt   15    6201,309 ±   47,244  us/op
+SequenceVsListBenchmark.chainDecreasing_3_list         1000000  avgt   15   26396,090 ±  294,934  us/op
+SequenceVsListBenchmark.chainDecreasing_3_sequence     1000000  avgt   15   34636,954 ±  198,808  us/op
+SequenceVsListBenchmark.chainDecreasing_5_list         1000000  avgt   15   38601,766 ±  280,383  us/op
+SequenceVsListBenchmark.chainDecreasing_5_sequence     1000000  avgt   15   64051,851 ±  153,906  us/op
+SequenceVsListBenchmark.chain_10_list                  1000000  avgt   15  119155,541 ± 1205,989  us/op
+SequenceVsListBenchmark.chain_10_sequence              1000000  avgt   15  137843,495 ± 2061,841  us/op
+SequenceVsListBenchmark.chain_1_list                   1000000  avgt   15   14383,589 ±   85,168  us/op
+SequenceVsListBenchmark.chain_1_sequence               1000000  avgt   15    3555,010 ±   51,859  us/op
+SequenceVsListBenchmark.chain_3_list                   1000000  avgt   15   41997,735 ± 2154,192  us/op
+SequenceVsListBenchmark.chain_3_sequence               1000000  avgt   15   30886,863 ±  360,257  us/op
+SequenceVsListBenchmark.chain_5_list                   1000000  avgt   15   61333,156 ± 1149,779  us/op
+SequenceVsListBenchmark.chain_5_sequence               1000000  avgt   15   56760,936 ± 1287,899  us/op

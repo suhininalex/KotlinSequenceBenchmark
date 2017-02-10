@@ -1,6 +1,7 @@
 package com.suhininalex.benchmark
 
 import org.openjdk.jmh.annotations.*
+import org.openjdk.jmh.infra.Blackhole
 import java.util.concurrent.TimeUnit
 
 @BenchmarkMode(Mode.AverageTime)
@@ -25,142 +26,142 @@ open class SequenceVsListBenchmark {
     }
 
     @Benchmark
-    fun chain_1_sequence() {
+    fun chain_1_sequence(bh: Blackhole) {
         data.asSequence()
                 .filter { true }
-                .forEach { }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chain_1_list() {
+    fun chain_1_list(bh: Blackhole) {
         data
                 .filter { true }
-                .forEach { }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chain_3_sequence() {
-        data.asSequence()
-                .filter { true }
-                .filter { true }
-                .filter { true }
-                .forEach { }
-    }
-
-    @Benchmark
-    fun chain_3_list() {
-        data
-                .filter { true }
-                .filter { true }
-                .filter { true }
-                .forEach { }
-    }
-
-    @Benchmark
-    fun chain_5_sequence() {
+    fun chain_3_sequence(bh: Blackhole) {
         data.asSequence()
                 .filter { true }
                 .filter { true }
                 .filter { true }
-                .filter { true }
-                .filter { true }
-                .forEach { }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chain_5_list() {
+    fun chain_3_list(bh: Blackhole) {
         data
                 .filter { true }
                 .filter { true }
                 .filter { true }
-                .filter { true }
-                .filter { true }
-                .forEach { }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chain_10_sequence() {
+    fun chain_5_sequence(bh: Blackhole) {
         data.asSequence()
                 .filter { true }
                 .filter { true }
                 .filter { true }
                 .filter { true }
                 .filter { true }
-                .filter { true }
-                .filter { true }
-                .filter { true }
-                .filter { true }
-                .filter { true }
-                .forEach { }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chain_10_list() {
+    fun chain_5_list(bh: Blackhole) {
         data
                 .filter { true }
                 .filter { true }
                 .filter { true }
                 .filter { true }
                 .filter { true }
-                .filter { true }
-                .filter { true }
-                .filter { true }
-                .filter { true }
-                .filter { true }
-                .forEach { }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chainDecreasing_1_sequence() {
+    fun chain_10_sequence(bh: Blackhole) {
         data.asSequence()
-                .filter { it % 10 < 5 }
-                .forEach { }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chainDecreasing_1_list() {
+    fun chain_10_list(bh: Blackhole) {
         data
-                .filter { it % 10 < 5 }
-                .forEach { }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .filter { true }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chainDecreasing_3_sequence() {
+    fun chainDecreasing_1_sequence(bh: Blackhole) {
         data.asSequence()
                 .filter { it % 10 < 5 }
-                .filter { it % 10 < 7 }
-                .filter { it % 10 < 8 }
-                .forEach { }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chainDecreasing_3_list() {
+    fun chainDecreasing_1_list(bh: Blackhole) {
         data
                 .filter { it % 10 < 5 }
-                .filter { it % 10 < 7 }
-                .filter { it % 10 < 8 }
-                .forEach { }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chainDecreasing_5_sequence() {
+    fun chainDecreasing_3_sequence(bh: Blackhole) {
         data.asSequence()
                 .filter { it % 10 < 5 }
                 .filter { it % 10 < 7 }
                 .filter { it % 10 < 8 }
-                .filter { it % 10 < 9 }
-                .filter { it % 10 <= 9 }
-                .forEach { }
+                .forEach { bh.consume(it) }
     }
 
     @Benchmark
-    fun chainDecreasing_5_list() {
+    fun chainDecreasing_3_list(bh: Blackhole) {
         data
+                .filter { it % 10 < 5 }
+                .filter { it % 10 < 7 }
+                .filter { it % 10 < 8 }
+                .forEach { bh.consume(it) }
+    }
+
+    @Benchmark
+    fun chainDecreasing_5_sequence(bh: Blackhole) {
+        data.asSequence()
                 .filter { it % 10 < 5 }
                 .filter { it % 10 < 7 }
                 .filter { it % 10 < 8 }
                 .filter { it % 10 < 9 }
                 .filter { it % 10 <= 9 }
-                .forEach { }
+                .forEach { bh.consume(it) }
+    }
+
+    @Benchmark
+    fun chainDecreasing_5_list(bh: Blackhole) {
+        data
+                .filter { it % 10 < 5 }
+                .filter { it % 10 < 7 }
+                .filter { it % 10 < 8 }
+                .filter { it % 10 < 9 }
+                .filter { it % 10 <= 9 }
+                .forEach { bh.consume(it) }
     }
 }
